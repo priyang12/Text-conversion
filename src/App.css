@@ -1,38 +1,133 @@
-.App {
-  text-align: center;
+img {
+  width: 100%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.Navimg img {
+  width: 50px;
+}
+.Navimg {
+  cursor: pointer;
+  opacity: 0.5;
+  transition: all 1s;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.yoda,
+.khaldrago,
+.minion {
+  opacity: 1;
+}
+.minion-bg {
+  transition: 1s all;
+  background: url('./assets/minoin-back.jpg') no-repeat center/cover;
+}
+.yoda-bg {
+  transition: 1s all;
+  background: url('./assets/star-background.jpg') no-repeat center/cover;
+}
+.dothraki-bg {
+  transition: 1s all;
+  background: url('./assets/game-wall.jpg') no-repeat center/cover;
+}
+#inputPhase {
+  font-size: 1.5rem;
+  position: relative;
+  z-index: 0;
+}
+#inputPhase::after {
+  content: '';
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  background-color: #333;
+  opacity: 0.5;
+  z-index: -1;
+}
+#inputPhase textarea {
+  background-color: #333;
+  color: #fff;
+}
+.btn {
+  width: 100%;
+  font-size: 2rem;
+  max-width: 300px;
+  color: #fdfdff;
+  background-color: #fff;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  box-shadow: 0 0 20px #eee;
+  border-radius: 10px;
+}
+.btn-yoda {
+  background-image: linear-gradient(
+    to right,
+    #1d2b64 0%,
+    #f8cdda 51%,
+    #1d2b64 100%
+  );
+}
+.btn-dothraki {
+  background-image: linear-gradient(
+    to right,
+    #27772e 0%,
+    #28be2f 51%,
+    #0f8529 100%
+  );
+}
+.btn-minion {
+  background-image: linear-gradient(
+    to right,
+    #e2d519 0%,
+    #e6f36d 51%,
+    #bbcf07 100%
+  );
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.btn:hover {
+  background-position: right center;
+  color: #fff;
+  text-decoration: none;
 }
-
-.App-link {
-  color: #61dafb;
+.output {
+  border: #eee 2px solid;
+  min-height: 100px;
+  border-radius: 20px;
+  font-size: 1.5rem;
+  font-family: 'Courier New', Courier, monospace;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Voices select {
+  background-color: transparent;
+  color: #eee;
+  font-size: 1rem;
+  padding: 1em;
+}
+.Voices option {
+  background-color: #333;
+}
+.Voices button {
+  font-size: 2rem;
+  padding: 0 1em;
+  margin-top: 0.5em;
+  text-transform: uppercase;
+  background-color: #1d2b64;
+  color: #eee;
+  border: 2px solid #f8cdda;
+  transition: 1s all;
+}
+.Voices button:hover {
+  font-size: 2rem;
+  padding: 0 2em;
+  background-color: #1d2b64;
+  color: #eee;
+  border: 2px solid #f8cdda;
+}
+.voiceimage {
+  width: 50%;
+  height: 350px;
+}
+.voiceimage img {
+  width: 100%;
+  height: 100%;
 }
