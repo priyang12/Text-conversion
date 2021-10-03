@@ -6,7 +6,7 @@ import SelectCharater from './Components/SelectCharater';
 function App() {
   const [type, settype] = useState('yoda');
   return (
-    <div className={`${type}-bg `}>
+    <div className={`${type}-bg vh-100`}>
       <SelectCharater settype={settype} />
       <Display type={type} />
     </div>

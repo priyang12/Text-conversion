@@ -27,7 +27,7 @@ const SelectCharater = ({ settype }) => {
       className='nav justify-content-around  align-items-center  text-light '
       data-testid='selectCharacter'
     >
-      <h1 className='display '>Select Character</h1>
+      <h1 className='display '>SELECT CHARACTER</h1>
       <div className='charaters d-flex flex-column flex-sm-row'>
         <div
           className={`Navimg mx-4 text-center ${yoda && 'yoda'}  `}

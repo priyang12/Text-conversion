@@ -17,7 +17,7 @@ const InputPhrase = ({ setPhase, character }) => {
           id='inputPhrase'
           rows='3'
           value={inputValue}
-          placeholder='master obiwan has lost a planet'
+          placeholder='Enter.....'
           onChange={(e) => setinputValue(e.target.value)}
         ></textarea>
       </div>

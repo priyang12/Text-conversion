@@ -39,6 +39,7 @@ describe('select character Tests', () => {
     userEvent.click(minionChar);
     expect(khalChar.className).not.toMatch(/khaldrago/);
     expect(minionChar.className).toMatch(/minion/);
+    //Check loacl Storage
     expect(localStorage.getItem('route')).toBe('minion');
   });
 });

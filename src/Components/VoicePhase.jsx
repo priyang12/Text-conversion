@@ -8,13 +8,13 @@ const VoicePhase = ({ text }) => {
   if (!text) return null;
   if (!supported) {
     return (
-      <p>
+      <p className='text-center h5 text-light m-2'>
         Oh no, it looks like your browser doesn&#39;t support Speech Synthesis.
       </p>
     );
   }
   return (
-    <div className='Voices'>
+    <div className='Voices w-100'>
       <select
         id='voice'
         name='voice'
