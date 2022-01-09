@@ -1,12 +1,12 @@
-import { useState } from 'react';
-import './App.css';
-import Display from './Components/Display';
-import SelectCharater from './Components/SelectCharater';
+import { useState } from "react";
+import "./App.css";
+import Display from "./Components/Display";
+import SelectCharater from "./Components/SelectCharater";
 
 function App() {
-  const [type, settype] = useState('yoda');
+  const [type, settype] = useState("yoda");
   return (
-    <div className={`${type}-bg vh-100`}>
+    <div className={`${type}-bg `}>
       <SelectCharater settype={settype} />
       <Display type={type} />
     </div>
